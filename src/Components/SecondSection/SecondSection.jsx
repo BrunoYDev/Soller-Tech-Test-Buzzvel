@@ -24,7 +24,7 @@ function SecondSection() {
                     observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.5 });
+        }, { threshold: 0.1 });
 
         fadeInElements.forEach(el => {
             if (el) {
