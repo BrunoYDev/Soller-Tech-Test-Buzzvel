@@ -1,0 +1,15 @@
+:root {
+  font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+  color: #0F172A;
+  
+  background-color: #ffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
