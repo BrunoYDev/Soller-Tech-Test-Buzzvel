@@ -29,6 +29,7 @@ export const Title = styled.h2`
     font-size: 16px;
     color: #D97706;
     text-align: center;
+    opacity: 0;
 `;
 
 export const Subtitle = styled.h3`
@@ -37,6 +38,7 @@ export const Subtitle = styled.h3`
     font-weight: 700;
     font-size: 32px;
     text-align: center;
+    opacity: 0;
 `;
 
 export const StyledText = styled.p`
@@ -45,6 +47,7 @@ export const StyledText = styled.p`
     font-weight: 400;
     font-size: 16px;
     text-align: center;
+    opacity: 0;
 `;
 
 export const StyledFigure = styled.figure`
@@ -59,6 +62,7 @@ export const StyledFigure = styled.figure`
     justify-content: center;
     align-items: center;
     object-fit: cover;
+    opacity: 0;
 }
 `;
 
@@ -74,6 +78,7 @@ export const StyledOrangeCircle = styled.div`
     z-index: -1;
     left: -180px;
     top: 180px;
+    opacity: 0;
 }
 `;
 
@@ -89,5 +94,6 @@ export const StyledPurpleCircle = styled.div`
     z-index: -1;
     right: -170px;
     top: 220px;
+    opacity: 0;
 }
 `;
