@@ -154,7 +154,7 @@ function FourthSection() {
     <StyledBubble ref={bubbleRef}></StyledBubble>
 
     <TextContainer>
-        <Title ref={titleRef}>Personalized Services</Title>
+        <Title ref={titleRef}>Services</Title>
         <Subtitle ref={subtitleRef}>Personalized services</Subtitle>
         <StyledText ref={textRef}>Pretium lectus ultrices sit tempor, sit ullamcorper volutpat et et. Auctor turpis semper id sit ornare maecenas lectus sed.</StyledText>
     </TextContainer>
