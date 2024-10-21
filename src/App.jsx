@@ -3,6 +3,7 @@ import Header from "./Components/Header/Header";
 import FirstSection from "./Components/FirstSection/FirstSection";
 import SecondSection from "./Components/SecondSection/SecondSection";
 import ThirdSection from "./Components/ThirdSection/ThirdSection";
+import FourthSection from "./Components/FourthSection/FourthSection";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <FirstSection/>
       <SecondSection/>
       <ThirdSection/>
+      <FourthSection/>
     </>
   )
 }
