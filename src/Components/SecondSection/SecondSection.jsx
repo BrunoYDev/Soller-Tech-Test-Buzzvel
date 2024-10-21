@@ -11,6 +11,7 @@ function SecondSection() {
     const orangeCircle = useRef(null);
     const purpleCircle = useRef(null);
 
+    // All GSAP animations for SecondSection
     useEffect(() => {
         const fadeInElements = [desktopRef.current, titleRef.current, subtitleRef.current, textRef.current,orangeCircle.current,purpleCircle.current];
 

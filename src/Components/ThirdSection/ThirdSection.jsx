@@ -25,6 +25,7 @@ function ThirdSection() {
 
     const celBlockList = [cellphoneBlock1,cellphoneBlock2,cellphoneBlock3]
 
+    // All GSAP animations for ThirdSection
     useEffect(() => {
         const fadeInElements = [titleRef.current, subtitleRef.current, textRef.current];
 

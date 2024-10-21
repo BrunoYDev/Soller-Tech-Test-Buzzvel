@@ -25,6 +25,8 @@ function FourthSection() {
 
     const celCircleList = [cellphoneCircle1,cellphoneCircle2,cellphoneCircle3]
 
+
+    // All GSAP animations for FourthSection
     useEffect(() => {
         const fadeInElements = [titleRef.current, subtitleRef.current, textRef.current];
 
@@ -97,7 +99,6 @@ function FourthSection() {
                 cellCirclesObserver.observe(block);
             }
         });
-
 
         const cardObserver = new IntersectionObserver((entries) => {
             const firstCard = cardsRef.current[0];
