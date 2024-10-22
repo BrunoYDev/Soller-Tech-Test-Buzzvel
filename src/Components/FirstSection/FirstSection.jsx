@@ -11,9 +11,9 @@ function FirstSection() {
       <ImageContainer>
         <StyledFigure>
             <img src={maskedImage} alt="Masked Image of a construct worker" />
-            <StyledDot></StyledDot>
         </StyledFigure>
       </ImageContainer>
+      <StyledDot></StyledDot>
     <TextContainer>
         <h2>Get the Sun to Power Your Home</h2>
         <p>Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis scelerisque.</p>
