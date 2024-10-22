@@ -31,7 +31,7 @@ export const StyledButton = styled.button`
     margin: 0;
     width: 300px;
     height: 64px;
-    background-color: #ffff;
+    background-color: transparent;
     border: 2px solid ${props => props.color};
     outline: none;
     border-radius: 50px;
