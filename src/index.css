@@ -5,11 +5,13 @@
   color: #0F172A;
   
   background-color: #ffff;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
+  
 }
 
 
