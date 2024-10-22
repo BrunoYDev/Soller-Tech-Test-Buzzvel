@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { gsap } from 'gsap';
-import { MenuButton, MenuMobile, NavLinks, StyledHeader, StyledNav, StyledTitle } from './style';
+import { ContactAndButtonContainer, MenuButton, MenuMobile, NavLinks, StyledHeader, StyledNav, StyledTitle } from './style';
+import ContactLogo from "../../assets/ContactLogo.png";
+import Button from "../Button/Button";
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,6 +43,13 @@ function Header() {
             <a href="#">Services</a>
             <a href="#">Configure</a>
           </NavLinks>
+          <ContactAndButtonContainer>
+            <div>
+              <img src={ContactLogo} alt="Contact Icon" />
+              <h2>555 818 282</h2>
+            </div>
+            <Button color="#581C87" backcolor="#581C87" textcolor="#FCD34D"/>
+          </ContactAndButtonContainer>
           {/* Mobile Menu */}
           {isMenuOpen && (
             <MenuMobile ref={menuRef}>

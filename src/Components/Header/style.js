@@ -16,6 +16,8 @@ position: absolute;
 /* Desktop (above 1024px) */
 @media (min-width: 1024px) {
     display: flex;
+    width: 100%;
+    padding: 20px 50px;
     justify-content: space-between;
     align-items: center;
 }
@@ -28,15 +30,13 @@ export const StyledNav = styled.nav`
     display: flex;
     align-items: center;
     gap: 20px;
-
-/* Mobile (until 768px) */
-@media (max-width: 768px) {
     position: relative;
-}
-
 
 /* Desktop (above 1024px) */
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+
+    width: 100%;
+}
 
 
 `;
@@ -123,4 +123,39 @@ export const NavLinks = styled.div`
       font-weight: 500;
     }
   }
+`;
+
+export const ContactAndButtonContainer = styled.div`
+  display: none;
+  
+/* Desktop (above 1024px) */
+@media (min-width: 1024px) {
+    display: flex;
+    position: absolute;
+    right: 100px;
+    gap: 20px;
+
+    div{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      
+      h2{
+        margin: 0;
+        padding: 0;
+        color: #0369A1;
+        font-weight: 500;
+        font-size: 16px;
+      }
+
+      img{
+        margin: 0;
+        padding: 0;
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+      }
+    }
+}
+
 `;
