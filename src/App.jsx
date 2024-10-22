@@ -6,6 +6,7 @@ import ThirdSection from "./Components/ThirdSection/ThirdSection";
 import FourthSection from "./Components/FourthSection/FourthSection";
 import FifthSection from "./Components/FifthSection/FifthSection";
 import SixthSection from "./Components/SixthSection/SixthSection";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <FourthSection/>
       <FifthSection/>
       <SixthSection/>
+      <Footer/>
     </>
   )
 }
