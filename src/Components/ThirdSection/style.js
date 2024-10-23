@@ -161,7 +161,7 @@ export const StyledFigure = styled.figure`
     }
 
     width: 550px;
-    left: 30px;
+    left: 5px;
     top: -120px;
 }
 
