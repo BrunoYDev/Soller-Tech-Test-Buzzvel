@@ -112,9 +112,9 @@ export const ImageContainer = styled.div`
 
 /* Desktop (above 1920px) */
 @media (min-width: 1900px) {
-    width: 600px;
-    height: 500px;
-    border-radius: 320px 0px 260px 160px;
+    width: 620px;
+    height: 700px;
+    border-radius: 380px 0px 340px 230px;
 }
 `;
 
@@ -146,6 +146,14 @@ export const StyledFigure = styled.figure`
         object-fit: contain;
     }
 }
+
+/* Desktop (above 1900px) */
+@media (min-width: 1900px) {
+
+img{
+    padding-top: 150px;
+}
+}
 `;
 
 export const StyledDot = styled.div`
@@ -166,8 +174,8 @@ export const StyledDot = styled.div`
 
 /* Desktop (above 1920px) */
 @media (min-width: 1900px) {
-    top: 480px;
-    right: 180px;
+    top: 655px;
+    right: 200px;
 }
 `;
 
