@@ -1,25 +1,42 @@
 import styled from "styled-components";
+import Button from "../Button/Button";
 
 export const Container = styled.section`
+  background-color: #581c87;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
 
-    background-color: #581C87;
+  #sectionTop {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+    padding: 0;
+
+    /* Desktop (above 1024px) */
+    @media (min-width: 1024px) {
+      margin-top: 35px;
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      
+      Button{
+        margin-right: 100px;
+      }
+
+    }
+
+  }
 
 `;
 
-
 export const ArrowButton = styled.div.withConfig({
-  shouldForwardProp: (prop) => prop !== 'left' && prop !== 'right'
+  shouldForwardProp: (prop) => prop !== "left" && prop !== "right",
 })`
-  width: 48px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
-  padding: 10px;
   cursor: pointer;
   position: absolute;
   z-index: 2;
@@ -42,53 +59,76 @@ export const ArrowButton = styled.div.withConfig({
     ${({ left }) => (left ? "left: 320px;" : "right: 320px;")}
   }
 
-`;
+  /* Desktop (above 1024px) */
+  @media (min-width: 1024px) {
+    ${({ left }) => (left ? "left: 20px;" : "right: 850px;")}
+  }
 
-export const Slide = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #581C87;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  opacity: 0;
+  /* Desktop (above 1900px) */
+  @media (min-width: 1900px) {
+    ${({ left }) => (left ? "left: 0px;" : "right: 1750px;")}
+  }
 `;
 
 export const CarouselContainer = styled.div`
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
   opacity: 0;
+
+  /* Desktop (above 1024px) */
+  @media (min-width: 1024px) {
+    margin-left: 100px;
+    overflow-x: hidden;
+  }
 `;
 
 export const TextContainer = styled.div`
+  margin-bottom: 20px;
 
-    margin-bottom: 20px;
+  h2 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #fcd34d;
+    text-align: center;
+    opacity: 0;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #ffff;
+    text-align: center;
+    opacity: 0;
+  }
+  p {
+    width: 100%;
+    height: 90px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffff;
+    text-align: center;
+    opacity: 0;
+  }
 
-    h2{
+  /* Desktop (above 1024px) */
+  @media (min-width: 1024px) {
+    margin-left: 60px;
+    margin-bottom: 0;
+      h2{
+        text-align: start;
         font-weight: 500;
-        font-size: 16px;
-        color: #FCD34D;
-        text-align: center;
-        opacity: 0;
-    }
-    h3{
-        font-weight: 700;
-        font-size: 32px;
-        color: #ffff;
-        text-align: center;
-        opacity: 0;
-    }
-    p{
-        width: 100%;
-        height: 90px;
+        font-size: 20px;
+      }
+      h3{
+        text-align: start;
+        font-weight: 800;
+        font-size: 45px;
+        margin: 20px 0;
+      }
+      p{
+        text-align: start;
+        width: 80%;
         font-weight: 400;
         font-size: 16px;
-        color: #ffff;
-        text-align: center;
-        opacity: 0;
+        margin: 0;
+      }
     }
-
 `;
