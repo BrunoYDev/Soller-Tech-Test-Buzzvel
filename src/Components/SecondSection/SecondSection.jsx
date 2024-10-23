@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import { Container, StyledFigure, StyledOrangeCircle, StyledPurpleCircle, StyledText, Subtitle, TextContainer, Title } from "./style";
+import { Container, StyledFigure, StyledFigure2, StyledOrangeCircle, StyledPurpleCircle, StyledText, Subtitle, TextContainer, Title } from "./style";
 import desktopImage from "../../assets/Desktop.png"
+import desktopImage2 from "../../assets/Desktop2.png"
 import gsap from "gsap";
 
 function SecondSection() {
@@ -55,6 +56,10 @@ function SecondSection() {
       <StyledFigure ref={desktopRef}>
         <img src={desktopImage} alt="Desktop Image" />
       </StyledFigure>
+
+      <StyledFigure2 ref={desktopRef}>
+        <img src={desktopImage2} alt="Desktop Image" />
+      </StyledFigure2>
     </Container>
   )
 }
