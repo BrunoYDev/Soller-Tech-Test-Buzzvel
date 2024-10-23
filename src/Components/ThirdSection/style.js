@@ -24,7 +24,8 @@ export const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 100px;
-    padding: 0 100px;
+    padding-right: 50px;
+    padding-left: 100px;
 }
 
 /* Desktop (above 1900px) */
