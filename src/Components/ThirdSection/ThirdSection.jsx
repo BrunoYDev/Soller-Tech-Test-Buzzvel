@@ -16,6 +16,7 @@ function ThirdSection() {
     const cardsRef = useRef([]);
     const cellBlocksRef = useRef([]);
 
+    // Mocker service list
     const servicesList = [
         {title: "Et mauris", description: "Posuere quis sed mauris non curabitur pretium elementum eget. Feugiat sed maecenas eu accumsan tristique."},
         {title: "Eget sit",  description: "Sit bibendum donec dolor fames neque vulputate non sit aliquam. Consequat turpis natoque leo, massa."},
@@ -158,13 +159,15 @@ function ThirdSection() {
         <Title ref={titleRef}>Services</Title>
         <Subtitle ref={subtitleRef}>Personalized services</Subtitle>
         <StyledText ref={textRef}>Pretium lectus ultrices sit tempor, sit ullamcorper volutpat et et. Auctor turpis semper id sit ornare maecenas lectus sed.</StyledText>
-    </TextContainer>
-
-    <StyledList>
+        
+        <StyledList>
         {servicesList.map((service, index) => (
             <Card key={index} ref={el => (cardsRef.current[index] = el)} service={service}/>
         ))}
-    </StyledList>
+        </StyledList>
+    </TextContainer>
+
+    
 
     <StyledFigure>
         <img src={cellphoneImage} alt="cellphone image" ref={cellphoneRef}/>
