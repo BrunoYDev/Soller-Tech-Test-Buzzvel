@@ -8,10 +8,20 @@ function SixthSection() {
   return (
     <Container>
         <PurpleCircle></PurpleCircle>
-        <h2>Get the Sun to power your home</h2>
-        <h3>All the power that you need for your house is now available</h3>
-        <Button color="#FCD34D" backcolor="#FCD34D" textcolor="#78350F" />
-        <h4>Egestas fringilla aliquam leo</h4>
+        <div id="subContainer">
+        
+        <div id="textContainer">
+          <h2>Get the Sun to power your home</h2>
+          <h3>All the power that you need for your house is now available</h3>
+        </div>
+        
+        
+          <div id="buttonContainer">
+            <Button color="#FCD34D" backcolor="#FCD34D" textcolor="#78350F" />
+            <h4>Egestas fringilla aliquam leo</h4>
+          </div>
+
+        </div>
         <img src={macbookImage} alt="Macbook Image" />
     </Container>
   )
