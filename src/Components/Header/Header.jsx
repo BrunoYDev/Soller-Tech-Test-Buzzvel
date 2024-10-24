@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { gsap } from 'gsap';
 import { ContactAndButtonContainer, MenuButton, MenuMobile, NavLinks, StyledHeader, StyledNav, StyledTitle } from './style';
-import ContactLogo from "../../assets/ContactLogo.png";
+import ContactLogo from "../../assets/contactlogo.png";
 import Button from "../Button/Button";
 
 function Header() {
