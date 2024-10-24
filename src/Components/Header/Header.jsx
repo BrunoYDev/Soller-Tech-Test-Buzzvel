@@ -23,17 +23,6 @@ function Header() {
       }, [isMenuOpen]);
 
     return (
-        <HelmetProvider>
-        <Helmet>
-          <title>Get the Sun to Power Your Home - Soller</title>
-          <meta name="description" content="Discover how solar power can help you save energy and power your home efficiently." />
-          <meta property="og:title" content="Get the Sun to Power Your Home" />
-          <meta name="description" content="Discover how solar power can help you save energy and power your home efficiently." />
-          <meta property="og:description" content="Discover how solar power can help you save energy." />
-          <meta property="og:image" content={ContactLogo} />
-          <meta property="og:site_name" content="Soller" />
-          <meta property="og:url" content="https://soller-solar-company.vercel.app" />
-        </Helmet>
         <StyledHeader>
           <StyledNav>
             <StyledTitle>Soller</StyledTitle>
@@ -65,7 +54,6 @@ function Header() {
           )}
           </StyledNav>
         </StyledHeader>
-      </HelmetProvider>
     )
   }
   
