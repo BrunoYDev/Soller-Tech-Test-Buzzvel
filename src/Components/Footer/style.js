@@ -8,6 +8,12 @@ export const Container = styled.footer`
     align-items: center;
     padding: 20px;
 
+    #copyrightContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 
     img{
         margin: 0;
@@ -37,5 +43,22 @@ export const Container = styled.footer`
             cursor: pointer;
         }
     }
+
+/* Desktop (above 1024px) */
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 35px 60px;
+    
+    #copyrightContainer{
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+
+        h2{
+            margin: 0;
+        }
+    }
+  }
 
 `;
