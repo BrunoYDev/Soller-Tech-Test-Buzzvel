@@ -49,7 +49,7 @@ export const Container = styled.footer`
     flex-direction: row;
     justify-content: space-between;
     padding: 35px 60px;
-    
+
     #copyrightContainer{
         flex-direction: row;
         align-items: center;
