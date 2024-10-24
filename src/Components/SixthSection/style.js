@@ -4,6 +4,7 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 
   position: relative;
 
@@ -18,6 +19,7 @@ export const Container = styled.section`
     font-weight: 500;
     font-size: 16px;
     color: #fcd34d;
+    opacity: 0;
   }
   h3 {
     margin-top: 20px;
@@ -26,6 +28,7 @@ export const Container = styled.section`
     font-weight: 700;
     font-size: 32px;
     color: #ffff;
+    opacity: 0;
   }
   h4 {
     margin-top: 20px;
@@ -34,12 +37,14 @@ export const Container = styled.section`
     font-weight: 400;
     font-size: 16px;
     color: #ffff;
+    opacity: 0;
   }
 
   img {
     margin-top: 20px;
     width: 350px;
     height: 200px;
+    opacity: 0;
   }
 
   #subContainer {
@@ -50,6 +55,7 @@ export const Container = styled.section`
       display: flex;
       flex-direction: column;
       align-items: center;
+      opacity: 0;
     }
   }
 
@@ -58,6 +64,7 @@ export const Container = styled.section`
     height: 100vh;
     overflow-x: hidden;
     padding-top: 60px;
+    padding-bottom: 15px;
     #subContainer{
         flex-direction: row;
         width: 100%;
@@ -107,6 +114,7 @@ export const PurpleCircle = styled.div`
   position: absolute;
   border-radius: 100%;
   z-index: -1;
+  opacity: 0;
 
   /* Mobile (above 768px) */
   @media (max-width: 768px) {
