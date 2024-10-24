@@ -10,7 +10,7 @@ function FirstSection() {
     <Container>
       <ImageContainer>
         <StyledFigure>
-            <img src={maskedImage} alt="Masked Image of a construct worker" />
+            <img src={maskedImage} alt="Masked Image of a construct worker" loading="lazy"/>
         </StyledFigure>
       </ImageContainer>
       <StyledDot></StyledDot>
@@ -22,7 +22,7 @@ function FirstSection() {
     <MessageContainer>
         <p>“Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis scelerisque faucibus.”</p>
         <div>
-            <figure><img src={rwandaProfile} alt="Rwanda Melfior Profile Picture" /></figure>
+            <figure><img src={rwandaProfile} alt="Rwanda Melfior Profile Picture" loading="lazy"/></figure>
             <div id="textSeparation">
                 <h3>Rwanda Melflor</h3>
                 <h4>zerowaste.com</h4>

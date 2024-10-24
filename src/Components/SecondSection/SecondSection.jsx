@@ -54,11 +54,11 @@ function SecondSection() {
       </TextContainer>
 
       <StyledFigure ref={desktopRef}>
-        <img src={desktopImage} alt="Desktop Image" />
+        <img src={desktopImage} alt="Desktop Image" loading="lazy" />
       </StyledFigure>
 
       <StyledFigure2 ref={desktopRef}>
-        <img src={desktopImage2} alt="Desktop Image" />
+        <img src={desktopImage2} alt="Desktop Image" loading="lazy" />
       </StyledFigure2>
     </Container>
   )

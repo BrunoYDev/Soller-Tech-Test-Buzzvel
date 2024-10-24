@@ -53,7 +53,7 @@ function SixthSection() {
                     <h4>Egestas fringilla aliquam leo</h4>
                 </div>
             </div>
-            <img src={macbookImage} alt="Macbook Image" ref={imgRef} />
+            <img src={macbookImage} alt="Macbook Image" ref={imgRef} loading="lazy" />
         </Container>
     );
 }

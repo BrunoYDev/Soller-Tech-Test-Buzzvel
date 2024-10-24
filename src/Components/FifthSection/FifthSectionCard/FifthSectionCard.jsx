@@ -8,7 +8,7 @@ function FifthSectionCard({opinion, $isActive}) {
         <Container $isActive={$isActive}>
             <Text>{opinion.text}</Text>
             <UserField>
-            <img src={opinion.pic} alt="profile picture" />
+            <img src={opinion.pic} alt="profile picture" loading="lazy" />
             <TextContainer>
                 <Name>{opinion.name}</Name>
                 <Desc>{opinion.desc}</Desc>

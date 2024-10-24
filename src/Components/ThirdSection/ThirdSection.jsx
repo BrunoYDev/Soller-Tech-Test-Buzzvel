@@ -170,10 +170,10 @@ function ThirdSection() {
     
 
     <StyledFigure>
-        <img src={cellphoneImage} alt="cellphone image" ref={cellphoneRef}/>
+        <img src={cellphoneImage} alt="cellphone image" loading="lazy" ref={cellphoneRef}/>
         <CellphoneBlocks>
             {celBlockList.map((image,index) => (
-                <img src={image} key={index} alt="celblock image" ref={el => (cellBlocksRef.current[index] = el)}></img>
+                <img src={image} key={index} alt="celblock image" loading="lazy" ref={el => (cellBlocksRef.current[index] = el)}></img>
             ))}
         </CellphoneBlocks>
     </StyledFigure>

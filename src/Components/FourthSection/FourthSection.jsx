@@ -166,10 +166,10 @@ function FourthSection() {
     </TextContainer>
     
     <StyledFigure>
-        <img src={cellphoneImage} alt="cellphone image" ref={cellphoneRef}/>
+        <img src={cellphoneImage} alt="cellphone image" loading="lazy" ref={cellphoneRef}/>
         <CellphoneBlocks>
             {celCircleList.map((image,index) => (
-                <img src={image} key={index} alt="celblock image" ref={el => (cellCircleRef.current[index] = el)}></img>
+                <img src={image} key={index} alt="celblock image" loading="lazy" ref={el => (cellCircleRef.current[index] = el)}></img>
             ))}
         </CellphoneBlocks>
     </StyledFigure>
