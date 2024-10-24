@@ -18,6 +18,7 @@ function App() {
         <Helmet>
           <title>Get the Sun to Power Your Home - Soller</title>
           <meta name="description" content="Discover how solar power can help you save energy and power your home efficiently." />
+          {/* I fixed the OG tags in the HTML. To make them dynamic, I will need to use another library. */}
           <meta property="og:title" content="Get the Sun to Power Your Home" />
           <meta property="og:description" content="Discover how solar power can help you save energy." />
           <meta property="og:image" content="https://github.com/BrunoYDev/Soller-Tech-Test-Buzzvel/blob/main/src/assets/logo.png?raw=true" />
