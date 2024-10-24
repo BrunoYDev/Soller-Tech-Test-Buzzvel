@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { Container, PurpleCircle } from "./style";
 import Button from "../Button/Button";
-import macbookImage from "../../assets/macbook.png";
+import macbookImage from "../../assets/Macbook.png";
+
 import gsap from "gsap";
 
 function SixthSection() {
