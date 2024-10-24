@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { gsap } from 'gsap';
 import { ContactAndButtonContainer, MenuButton, MenuMobile, NavLinks, StyledHeader, StyledNav, StyledTitle } from './style';
 import ContactLogo from "../../assets/contactlogo.png";
@@ -23,12 +22,6 @@ function Header() {
       }, [isMenuOpen]);
 
     return (
-        <HelmetProvider>
-        <Helmet>
-          <title>Get the Sun to Power Your Home - Soller</title>
-          <meta name="description" content="Discover how solar power can help you save energy and power your home efficiently." />
-          
-        </Helmet>
         <StyledHeader>
           <StyledNav>
             <StyledTitle>Soller</StyledTitle>
@@ -60,7 +53,6 @@ function Header() {
           )}
           </StyledNav>
         </StyledHeader>
-      </HelmetProvider>
     )
   }
   
