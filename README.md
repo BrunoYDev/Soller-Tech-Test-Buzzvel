@@ -49,11 +49,8 @@ This application is a **Single Page Application (SPA)** developed with **ReactJS
   ```bash
   /src
      /components       # Reusable components
-     /pages            # Main pages of the application
-     /styles           # Global styles and theming
      /assets           # Images, fonts, etc.
-     App.js            # Main component
-     index.js          # Entry file
+     App.jsx           # Main file
   ```
 ## Contact
 <ul>
